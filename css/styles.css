@@ -1,0 +1,45 @@
+img {
+  display: block;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.gallery {
+  list-style: none;
+  width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 48 px) / 3);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s easy-in;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  filter: grayscale(95%);
+}
+
+.modal-image {
+  width: 720px;
+  height: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
